@@ -7,13 +7,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:payday_bank/main.dart';
+import 'package:payday_bank/core/core.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
+    await tester.pumpWidget(Payday());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
